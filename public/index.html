@@ -1,12 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Hello, World!</title>
-	</head>
-	<body>
-		<h1 id="heading">Hello, World!</h1>
-		<p>This page comes from a static asset stored at `public/index.html` as configured in `wrangler.jsonc`.</p>
-	</body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThreatIQ - Real-Time Threat Intelligence</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="head-container">
+        <div>
+          <h1>🔍 ThreatIQ Dashboard</h1>
+          <p>Enter an IP address, domain, or hash to check threat intelligence data in real time.</p>
+        </div>
+        <div class="logo-container">
+          <img src="images/logo_security.png" alt="SecuritySuccess Logo" class="logo" />
+        </div>
+      </div>  
+    </header>
+
+    <main>
+      <form id="threatForm">
+        <label for="indicator">Indicator of Compromise (IOC):</label>
+        <input type="text" id="indicator" placeholder="e.g. 8.8.8.8 or example.com" required />
+
+        <button type="submit">Search</button>
+      </form>
+
+      <section id="results" class="results">
+        <h2>Results</h2>
+        <div id="output">No results yet.</div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Powered by SecuritySuccess • Public Threat Feeds via Secure Backend</p>
+    </footer>
+  </div>
+
+  <script src="index.js" type="module"></script>
+</body>
 </html>
+

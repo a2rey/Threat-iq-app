@@ -5,11 +5,12 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "threat-iq-worker",
+	"main": "public/iq-source-worker.js",
 	"compatibility_date": "2025-10-11",
-	"assets": {
+	//"assets": {
 		// The path to the directory containing the `index.html` file to be served at `/`
-		"directory": "./public"
-	},
+	//	"directory": "./"
+	//},
 	"observability": {
 		"enabled": true
 	}
