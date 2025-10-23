@@ -1,13 +1,14 @@
 {
-  "name": "threat-iqgi-app",
-  "dependencies": {},
-  "devDependencies": {
-    "vite": "latest"
-  },
-  "scripts": {
-    "start": "vite",
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  }
+	"name": "threat-iq-worker",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"build": "echo \"No build step required\""
+	},
+	"devDependencies": {
+		"wrangler": "^4.42.2"
+	}
 }
